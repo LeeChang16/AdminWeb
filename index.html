@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pest Information Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Insert</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="row"></div>
+  <div class="container">
+    <h1>Add a New Pest</h1>
+    <form action="insert.php" method="post" enctype="multipart/form-data">
+      <label for="pest_image">Pest Image:</label>
+      <input type="file" name="pest_image" id="pest_image" required><br>
+
+      <label for="pest_id">Pest Id:</label>
+      <input type="text" name="pest_id" id="pest_id" required><br>
+
+      <label for="pest_name">Pest Name:</label>
+      <input type="text" name="pest_name" id="pest_name" required><br>
+
+      <label for="scientific_name">Scientific Name:</label>
+      <input type="text" name="scientific_name" id="scientific_name" required><br>
+
+      <label for="order">Order:</label>
+      <input type="text" name="order" id="order" required><br>
+
+      <label for="family">Family:</label>
+      <input type="text" name="family" id="family" required><br>
+
+      <label for="description">Description:</label>
+      <textarea name="description" id="description" rows="5" cols="30" required></textarea><br>
+
+      <label for="intervention">Intervention Methods:</label>
+      <textarea name="intervention" id="intervention" rows="5" cols="30" required></textarea><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

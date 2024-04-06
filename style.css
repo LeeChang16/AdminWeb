@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+    background-color: #222; /* Dark background color */
+    color: white; /* Light text color for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height for full viewport */
+  }
+  header {
+    background-color: #333; /* Slightly lighter background for the navbar */
+    padding: 1rem 2rem;
+    /* Added styles for positioning the header on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Span the entire width */
+    z-index: 10; /* Ensure the header stays on top of other elements */
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation items to the right */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem; /* Add space between navigation items */
+  }
+  
+  nav a {
+    color: white; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Add padding for links */
+  }
+  
+  nav a:hover {
+    background-color: #4CAF50; /* Green hover effect */
+    color: black; /* Change text color on hover */
+  }
+  
+  .container {
+    background-color: #333; /* Slightly lighter background for the form */
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners for the form */
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 500px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-top: 4rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%; /* Ensures elements fill available space */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45A049; /* Slightly darker green */
+  }
+  
+  /* Media Queries for smaller screens */
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+  

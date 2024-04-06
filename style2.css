@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+    background-color: #222; /* Light gray background */
+    color: white; /* Dark text color */
+  }
+  
+  header {
+    background-color: #333; /* Slightly lighter background for the navbar */
+    padding: 1rem 2rem;
+    /* Added styles for positioning the header on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Span the entire width */
+    z-index: 10; /* Ensure the header stays on top of other elements */
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation items to the right */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem; /* Add space between navigation items */
+  }
+  
+  nav a {
+    color: white; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Add padding for links */
+  }
+  
+  nav a:hover {
+    background-color: #4CAF50; /* Green hover effect */
+    color: black; /* Change text color on hover */
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: space-between; /* Space out cards evenly */
+    margin: 2rem 0;
+  }
+  
+  .card {
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(33% - 2rem); /* Adjust width for 3 cards per row */
+    text-align: center; /* Center content within cards */
+    border-radius: 5px; /* Add rounded corners for a formal touch */
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none; /* Remove default bullet points for lists */
+    padding: 0; /* Remove default padding for lists */
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Add styles for different card colors */
+  .card-1 {
+    background-color: #d7e8f4; /* Light blue for Total Pests */
+  }
+  
+  .card-2 {
+    background-color: #e8d7e4; /* Light pink for Recent Additions */
+  }
+  
+  .card-3 {
+    background-color: #}
+  
